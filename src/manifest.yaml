@@ -1,0 +1,10 @@
+version: 1
+name: "sample-databricks-app"
+description: "A sample Databricks application demonstrating various resource types and permissions"
+user_api_scopes:
+  - "sql"
+resource_specs:
+  - name: "sql-warehouse"
+    description: "SQL warehouse for data processing"
+    sql_warehouse_spec:
+      permission: "CAN_USE"
