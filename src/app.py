@@ -52,7 +52,7 @@ def load_data() -> pd.DataFrame:
         # Query the SQL data with the user credentials
         # return sql_query_with_user_token("SELECT * FROM {catalog_name}.default.trips LIMIT 5000", user_token=user_token)
         # In order to query with Service Principal credentials, comment the above line and uncomment the below line
-        return sql_query_with_service_principal("SELECT * FROM {catalog_name}.default.trips LIMIT 5000")
+        return sql_query_with_service_principal(f"SELECT * FROM {catalog_name}.default.trips LIMIT 5000")
     except Exception as e:
         print(f"Data load failed: {str(e)}")
         return pd.DataFrame()
