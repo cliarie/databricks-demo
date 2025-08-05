@@ -9,7 +9,7 @@ import dash_ag_grid as dag
 from databricks.sdk.core import Config
 import flask  # for request context
 
-WAREHOUSE_ID = "e9ef6a527497a91d"
+WAREHOUSE_ID = "24676c338ee41f0f"
 
 # Databricks config
 cfg = Config()
